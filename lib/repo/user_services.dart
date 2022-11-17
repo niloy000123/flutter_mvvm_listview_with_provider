@@ -1,17 +1,16 @@
 import 'dart:convert';
 import 'dart:io';
-
-import 'package:flutter_mvvm_listview_with_provider/users_list/model/users_list_model.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/repo/api_status.dart';
+import 'package:flutter_mvvm_listview_with_provider/repo/api_status.dart';
 import 'package:flutter_mvvm_listview_with_provider/utils/constants.dart';
 import 'package:http/http.dart' as http;
+
+import '../model/users_list_model.dart';
 
 class UserServices {
   static Future<Object> getUser() async {
     try {
       var url = Uri.parse(USER_LIST);
       var response = await http.get(url);
-      print(response.body);
       var body = json.decode(response.body);
       if (response.statusCode == 200) {
         return Success(

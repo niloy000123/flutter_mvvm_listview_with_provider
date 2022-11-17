@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/views/home_screen.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/view_model/users_view_model.dart';
+import 'package:flutter_mvvm_listview_with_provider/view_model/users_view_model.dart';
+import 'package:flutter_mvvm_listview_with_provider/views/home_screen.dart';
+
 import 'package:provider/provider.dart';
 
 void main() {

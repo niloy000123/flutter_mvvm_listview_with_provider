@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/model/users_error.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/model/users_list_model.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/repo/api_status.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/repo/user_services.dart';
+
+import '../model/users_error.dart';
+import '../model/users_list_model.dart';
+import '../repo/api_status.dart';
+import '../repo/user_services.dart';
 
 class UsersViewModel extends ChangeNotifier {
   bool _loading = false;

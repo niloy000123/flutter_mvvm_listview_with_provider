@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mvvm_listview_with_provider/component/app_loding.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/component/user_list_row.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/model/users_list_model.dart';
-import 'package:flutter_mvvm_listview_with_provider/users_list/view_model/users_view_model.dart';
+import 'package:flutter_mvvm_listview_with_provider/component/user_list_row.dart';
 import 'package:provider/provider.dart';
+
+import '../model/users_list_model.dart';
+import '../view_model/users_view_model.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
